@@ -1,0 +1,77 @@
+.about {
+  padding: 100px 0;
+  background-color: transparent;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 300px !important;
+  height: 'auto' !important;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos diferentes para o avatar em cada tema */
+body.light-mode .avatar {
+  border-color: rgba(103, 58, 183, 0.8);
+  box-shadow: 0 10px 30px rgba(103, 58, 183, 0.2);
+}
+
+body.dark-mode .avatar {
+  border-color: rgba(144, 202, 249, 0.8);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(144, 202, 249, 0.3);
+}
+
+.avatar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.bioTitle {
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.bioTitle::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: var(--mui-palette-primary-main);
+  bottom: -10px;
+  left: 0;
+}
+
+.bioText {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.skillsTitle {
+  font-weight: 600;
+  margin: 32px 0 16px;
+}
+
+.skillsContainer {
+  margin-top: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+  
+  .avatar {
+    width: 200px !important;
+    height: 200px !important;
+    margin-bottom: 32px;
+  }
+}

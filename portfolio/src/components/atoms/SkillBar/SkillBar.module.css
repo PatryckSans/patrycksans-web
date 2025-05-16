@@ -1,0 +1,25 @@
+.container {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.level {
+  color: var(--mui-palette-text-secondary);
+  font-size: 0.875rem;
+}
+
+.progressBar {
+  height: 8px;
+  border-radius: 4px;
+}

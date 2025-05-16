@@ -1,0 +1,77 @@
+.experience {
+  padding: 100px 0;
+}
+
+.timeline {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timelineItem {
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timelineItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.timelinePeriod {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--mui-palette-primary-main);
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.timelineContent {
+  padding: 10px;
+}
+
+.jobTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.company {
+  font-weight: 500;
+  color: var(--mui-palette-primary-main);
+  margin-bottom: 12px;
+}
+
+.period {
+  font-weight: 500;
+}
+
+.description {
+  line-height: 1.6;
+}
+
+/* Estilos específicos para cada tema */
+body.light-mode .timelinePeriod {
+  background-color: rgba(103, 58, 183, 0.8);
+}
+
+body.dark-mode .timelinePeriod {
+  background-color: rgba(144, 202, 249, 0.8);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .experience {
+    padding: 60px 0;
+  }
+  
+  .timeline {
+    gap: 20px;
+  }
+  
+  .timelineItem {
+    padding: 15px;
+  }
+}

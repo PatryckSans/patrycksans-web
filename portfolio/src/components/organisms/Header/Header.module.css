@@ -1,0 +1,106 @@
+.appBar {
+  background-color: transparent;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  background-color: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--mui-palette-primary-main);
+}
+
+.desktopNav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.navLinkContainer {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.navLinkContainer:hover {
+  transform: scale(1.1);
+}
+
+.navLinkContainer:active {
+  transform: scale(0.95);
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--mui-palette-primary-main);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.themeToggle {
+  margin-left: 16px;
+}
+
+.drawer {
+  width: 250px;
+}
+
+.drawerPaper {
+  width: 250px;
+  background-color: var(--mui-palette-background-paper);
+}
+
+.drawerList {
+  padding-top: 20px;
+}
+
+.drawerItem {
+  padding: 15px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.drawerItem:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .drawerItem:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}

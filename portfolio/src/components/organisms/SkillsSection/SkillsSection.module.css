@@ -1,0 +1,32 @@
+.skills {
+  padding: 100px 0;
+  background-color: var(--mui-palette-background-default);
+}
+
+.filtersContainer {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  margin-bottom: 24px;
+}
+
+.tab {
+  text-transform: none;
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.noSkills {
+  padding: 40px 0;
+  font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 0;
+  }
+}

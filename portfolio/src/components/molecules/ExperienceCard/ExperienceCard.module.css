@@ -1,0 +1,54 @@
+.card {
+  height: 100%;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.workCard {
+  border-left-color: var(--mui-palette-primary-main);
+}
+
+.educationCard {
+  border-left-color: var(--mui-palette-secondary-main);
+}
+
+.certificationCard {
+  border-left-color: var(--mui-palette-success-main);
+}
+
+.content {
+  padding: 16px;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.company {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.location, .period {
+  font-size: 0.875rem;
+}
+
+.descriptionList {
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.descriptionItem {
+  padding: 4px 0;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}

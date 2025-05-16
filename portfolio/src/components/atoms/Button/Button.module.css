@@ -1,0 +1,26 @@
+.primaryButton {
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secondaryButton {
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-transform: none;
+  border-width: 2px;
+}
+
+.iconButton {
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.linkButton {
+  text-transform: none;
+  font-weight: 600;
+  padding: 6px 12px;
+}

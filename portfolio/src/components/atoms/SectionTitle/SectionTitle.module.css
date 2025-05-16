@@ -1,0 +1,20 @@
+.container {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-weight: 700;
+  position: relative;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+}
+
+.underline {
+  height: 4px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--mui-palette-primary-main) 0%, var(--mui-palette-secondary-main) 100%);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}

@@ -1,0 +1,95 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body.light-mode {
+  color: #212121;
+  background: #ffffff;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(103, 58, 183, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 60%, rgba(156, 39, 176, 0.1) 0%, transparent 25%),
+    radial-gradient(circle at 50% 80%, rgba(103, 58, 183, 0.05) 0%, transparent 30%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.dark-mode {
+  color: #ffffff;
+  background: linear-gradient(180deg, rgba(67, 5, 89, 1) 0%, rgba(101, 23, 122, 1) 57%, rgba(0, 0, 0, 1) 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Estilos de rolagem personalizados */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.light-mode ::-webkit-scrollbar-track {
+  background: rgba(240, 240, 240, 0.8);
+}
+
+body.light-mode ::-webkit-scrollbar-thumb {
+  background: rgba(103, 58, 183, 0.5);
+  border-radius: 4px;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb:hover {
+  background: rgba(103, 58, 183, 0.7);
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+  background: rgba(30, 30, 30, 0.5);
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: rgba(144, 202, 249, 0.6);
+  border-radius: 4px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: rgba(144, 202, 249, 0.8);
+}
+
+/* Estilos para links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para transições suaves */
+.page-transition-enter {
+  opacity: 0;
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

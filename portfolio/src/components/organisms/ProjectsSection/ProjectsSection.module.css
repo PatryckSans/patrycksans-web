@@ -1,0 +1,27 @@
+.projects {
+  padding: 100px 0;
+  background-color: var(--mui-palette-background-paper);
+}
+
+.filtersContainer {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  margin-bottom: 24px;
+}
+
+.tab {
+  text-transform: none;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 0;
+  }
+}

@@ -1,0 +1,125 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.greeting {
+  font-weight: 500;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+/* Estilo para o nome no modo escuro */
+body.dark-mode .name {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #90caf9, #f48fb1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(144, 202, 249, 0.3);
+}
+
+/* Estilo para o nome no modo claro */
+body.light-mode .name {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #673ab7, #9c27b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(103, 58, 183, 0.3);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.buttonContainer {
+  margin-top: 32px;
+}
+
+.shapesContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(30px);
+}
+
+/* Formas no modo escuro */
+body.dark-mode .shape1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(45deg, #90caf9, #f48fb1);
+  top: 10%;
+  right: 5%;
+}
+
+body.dark-mode .shape2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(-45deg, #f48fb1, #90caf9);
+  bottom: 10%;
+  left: 5%;
+}
+
+/* Formas no modo claro */
+body.light-mode .shape1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(45deg, #673ab7, #9c27b0);
+  top: 10%;
+  right: 5%;
+}
+
+body.light-mode .shape2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(-45deg, #9c27b0, #673ab7);
+  bottom: 10%;
+  left: 5%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .name {
+    font-size: 3rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+  }
+}

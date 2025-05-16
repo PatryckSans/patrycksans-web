@@ -1,0 +1,15 @@
+.chip {
+  margin: 4px;
+  font-weight: 500;
+  border-radius: 16px;
+}
+
+.filled {
+  background-color: var(--mui-palette-primary-light);
+  color: var(--mui-palette-primary-contrastText);
+}
+
+.outlined {
+  border: 1px solid var(--mui-palette-primary-main);
+  color: var(--mui-palette-primary-main);
+}
